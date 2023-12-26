@@ -1,0 +1,869 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Jolene Prins</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN"
+      crossorigin="anonymous"
+    />
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+      crossorigin="anonymous"
+    ></script>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+      integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Libre+Bodoni:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/mouse-follower@1/dist/mouse-follower.min.css"
+    />
+
+    <script
+      defer
+      src="https://unpkg.com/mouse-follower@1/dist/mouse-follower.min.js"
+    ></script>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.10.4/gsap.min.js"></script>
+    <link rel="stylesheet" href="css/style.css" />
+    <script src="js/script.js" defer></script>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"
+      integrity="sha512-v2CJ7UaYy4JwqLDIrZUI/4hqeoQieOmAZNXBeQyjo21dadnwR+8ZaIJVT8EE2iyI61OV8e6M8PP2/4hpQINQ/g=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+    />
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script src="https://unpkg.com/typeit@8.7.1/dist/index.umd.js"></script>
+  </head>
+  <body>
+    <header class="min-vh-100 position-relative mw-100 d-flex flex-column">
+      <!-- poster="https://via.placeholder.com/1920x1080/000.svg" -->
+      <!-- src="https://writer.ancorathemes.com/wp-content/uploads/2022/01/video-bg.mp4" -->
+      <video
+        autoplay
+        muted
+        loop
+        src="videos/Homepage_1.mp4"
+        class="w-100 h-100 object-fit-cover position-absolute top-0 start-0 end-0 bottom-0"
+      ></video>
+      <div
+        class="overlay-video-wrapper w-100 h-100 position-absolute top-0 start-0 end-0 bottom-0"
+      ></div>
+      <nav
+        class="main-nav-js navbar navbar-expand-lg z-3 start-0 end-0 top-0"
+        data-bs-theme="dark"
+      >
+        <div class="container">
+          <a class="navbar-brand" href="index.html">
+            <img src="img/JP-logo_horizontal_white.png" alt="" />
+          </a>
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav gap-3 ms-auto mb-2 mb-lg-0">
+              <li class="nav-item">
+                <a
+                  class="nav-link fw-bold"
+                  aria-current="page"
+                  href="mystory.html"
+                  >My Story</a
+                >
+              </li>
+              <!-- <li class="nav-item">
+                <a class="nav-link  fw-bold" href="#">Blogs</a>
+              </li> -->
+              <li class="nav-item dropdown">
+                <a
+                  class="nav-link dropdown-toggle fw-bold"
+                  href="#"
+                  role="button"
+                  data-bs-toggle="dropdown"
+                  aria-expanded="false"
+                >
+                  Blogs
+                </a>
+                <ul class="dropdown-menu">
+                  <li>
+                    <a class="dropdown-item" href="beyond-the-saree.html"
+                      >Beyond The Saree</a
+                    >
+                  </li>
+                  <li>
+                    <a class="dropdown-item" href="beyond-the-wooden-shoes.html"
+                      >Beyond The Wooden Shoes</a
+                    >
+                  </li>
+                  <!-- <li><hr class="dropdown-divider" /></li>
+                  <li>
+                    <a class="dropdown-item" href="#">Something else here</a>
+                  </li> -->
+                </ul>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link fw-bold" href="gallery.html">Gallery</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link fw-bold" href="contact.html">Contact</a>
+              </li>
+              <li class="nav-item d-flex align-items-center">
+                <ul class="list-unstyled d-flex gap-4 align-items-center">
+                  <!-- <li>
+                    <a href="https://www.instagram.com/joleneprins.com_blog/"
+                      ><i class="fa-brands fa-instagram fw-bold"></i
+                    ></a>
+                  </li>
+                  <li>
+                    <a
+                      href="https://www.linkedin.com/in/jolene-prins-05311280/"
+                      class=""
+                      ><i class="fa-brands fa-linkedin fw-bold"></i
+                    ></a>
+                  </li> -->
+                  <li>
+                    <a href="#" class="flag-country d-flex">
+                      <img src="img/uk flag.jpg" alt="" />
+                    </a>
+                  </li>
+                  <li>
+                    <a href="#" class="flag-country d-flex">
+                      <img
+                        src="img/Vector_illustration_of_the_flag_of_the_Netherlands_generated.jpg"
+                        alt=""
+                      />
+                    </a>
+                  </li>
+                  <!-- <li>
+                    <a href="#"
+                      ><i class="fa-brands fa-x-twitter  fw-bold"></i
+                    ></a>
+                  </li> -->
+                </ul>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+
+      <div class="container py-5 my-5 flex-grow-1 align-items-center d-flex">
+        <div class="row">
+          <div class="col-12 text-white">
+            <h1 class="display-1 fw-bold theme-color-hightlight">
+              Crossing borders, <br />
+              one story <br />
+              at the time
+            </h1>
+            <a
+              href="mystory.html"
+              class="custom-btn rounded-0 btn btn-warning mt-4 px-5 py-3 fw-semibold text-white"
+              >Discover Now</a
+            >
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <main class="pt-5 mt-5">
+      <section class="container">
+        <h2 class="text-center display-4 fw-bold mb-5 mt-3">
+          Latest From the Blog<span not="blog-typeit"></span>
+        </h2>
+
+        <div class="swiper" id="latest-blog">
+          <div class="swiper-wrapper">
+            <div class="swiper-slide">
+              <a href="#" class="stretched-link d-inline-block overflow-hidden">
+                <img
+                  class="img-fluid stretched-link-img object-fit-cover h-100"
+                  src="https://i0.wp.com/joleneprins.com/wp-content/uploads/2023/11/For-website-2.jpg?resize=890%2C510&ssl=1"
+                  alt=""
+                />
+              </a>
+              <div class="mt-4">
+                <div class="section-title">Beyond the Saree</div>
+                <h5 class="mt-3">Finding the “care” in “healthcare”</h5>
+                <div
+                  class="mt-3 fs-7 text-secondary swiper-post-date d-flex align-items-center gap-2"
+                >
+                  <span>15th November, 2023</span>
+                  <i class="fa-solid fa-circle"></i>
+                  <span>3 Comments</span>
+                </div>
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <a href="#" class="stretched-link d-inline-block overflow-hidden">
+                <img
+                  class="img-fluid stretched-link-img object-fit-cover h-100"
+                  src="https://i0.wp.com/joleneprins.com/wp-content/uploads/2023/11/For-website-1.jpg?resize=890%2C510&ssl=1"
+                  alt=""
+                />
+              </a>
+              <div class="mt-4">
+                <div class="section-title">Beyond the Saree</div>
+                <h5 class="mt-3">When did you come to India?</h5>
+                <div
+                  class="mt-3 fs-7 text-secondary swiper-post-date d-flex align-items-center gap-2"
+                >
+                  <span>22nd October, 2023</span>
+                  <i class="fa-solid fa-circle"></i>
+                  <span>3 Comments</span>
+                </div>
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <a href="#" class="stretched-link d-inline-block overflow-hidden">
+                <img
+                  class="img-fluid stretched-link-img object-fit-cover h-100"
+                  src="https://i0.wp.com/joleneprins.com/wp-content/uploads/2023/11/For-website.jpg?resize=890%2C510&ssl=1"
+                  alt=""
+                />
+              </a>
+              <div class="mt-4">
+                <div class="section-title">Beyond the Saree</div>
+                <h5 class="mt-3">Roughing it</h5>
+                <div
+                  class="mt-3 fs-7 text-secondary swiper-post-date d-flex align-items-center gap-2"
+                >
+                  <span>7th November 2023</span>
+                  <i class="fa-solid fa-circle"></i>
+                  <span>0 Comments</span>
+                </div>
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <a href="#" class="stretched-link d-inline-block overflow-hidden">
+                <img
+                  class="img-fluid stretched-link-img object-fit-cover h-100"
+                  src="https://i0.wp.com/joleneprins.com/wp-content/uploads/2023/10/Best-picture_edited_.png?resize=890%2C664&ssl=1"
+                  alt=""
+                />
+              </a>
+              <div class="mt-4">
+                <div class="section-title">Beyond the Saree</div>
+                <h5 class="mt-3">(Re)Discovering Pushkar</h5>
+                <div
+                  class="mt-3 fs-7 text-secondary swiper-post-date d-flex align-items-center gap-2"
+                >
+                  <span>23rd November 2023</span>
+                  <i class="fa-solid fa-circle"></i>
+                  <span>0 Comments</span>
+                </div>
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <a href="#" class="stretched-link d-inline-block overflow-hidden">
+                <img
+                  class="img-fluid stretched-link-img object-fit-cover h-100"
+                  src="https://i0.wp.com/joleneprins.com/wp-content/uploads/2023/02/IMAGE-IS-COMINGScreenshot-2023-02-05-at-10.35.16.png?resize=890%2C664&ssl=1"
+                  alt=""
+                />
+              </a>
+              <div class="mt-4">
+                <div class="section-title">Beyond the Saree</div>
+                <h5 class="mt-3">Why isn’t this going faster?!?</h5>
+                <div
+                  class="mt-3 fs-7 text-secondary swiper-post-date d-flex align-items-center gap-2"
+                >
+                  <span>11th February 2023</span>
+                  <i class="fa-solid fa-circle"></i>
+                  <span>1 Comments</span>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="swiper-pagination"></div>
+        </div>
+      </section>
+      <section
+        class="quotes vh-100 position-relative text-center py-5 my-5 d-flex align-items-center justify-content-center flex-column"
+      >
+        <div
+          class="position-absolute top-0 start-0 bottom-0 end-0 quote-overlay"
+        ></div>
+        <p class="display-5 fw-bold pt-5 mt-5 position-relative z-2 text-white">
+          "Within the chaos, it’s possible to find a <br />
+          certain order and calm that can only be found <br />
+          if you discover who you are…for which you need the chaos."
+          <!-- <span id="type_write" class="text-decoration-underline"></span>." -->
+        </p>
+        <p class="fw-normal fs-4 mb-5 text-white position-relative z-2">
+          - Jolene Prins -
+          <!-- <br />
+          <span class="fw-light small text-muted" id="quote-designation"
+            >Creative Director</span> -->
+        </p>
+      </section>
+      <section class="instagram-posts mt-5 pt-5">
+        <div class="pt-5 pb-3">
+          <h2 class="text-center">Follow me on Instagram</h2>
+        </div>
+        <!-- <div class="text-center small section-title">Follow Me!</div>
+        <h2 class="text-center display-4 fw-bold mb-5">Follow Me On Instagram</h2> -->
+        <!-- <div class="container-fluid">
+          <div class="row row-cols-1 row-cols-md-3 row-cols-lg-4">
+            <div class="col px-0 position-relative overflow-hidden">
+              <a
+                href="#"
+                class="insta-trigger z-2 position-absolute top-0 bottom-0 start-0 end-0"
+              >
+                <span
+                  class="visually-hidden text-center position-absolute top-0 start-0 end-0 bottom-0 d-flex align-items-center justify-content-center flex-column text-white"
+                >
+                  <i
+                    class="fa-brands fa-instagram fa-lg"
+                    style="color: #ffffff"
+                  ></i>
+                  <br />
+                  #JolenPrins
+                </span>
+              </a>
+              <img
+                class="img-fluid"
+                src="https://i0.wp.com/joleneprins.com/wp-content/uploads/2023/01/gallery_2.png?fit=403%2C303&ssl=1"
+                alt=""
+              />
+            </div>
+            <div class="col px-0 position-relative overflow-hidden">
+              <a
+                href="#"
+                class="insta-trigger z-2 position-absolute top-0 bottom-0 start-0 end-0"
+              >
+                <span
+                  class="visually-hidden text-center position-absolute top-0 start-0 end-0 bottom-0 d-flex align-items-center justify-content-center flex-column text-white"
+                >
+                  <i
+                    class="fa-brands fa-instagram fa-lg"
+                    style="color: #ffffff"
+                  ></i>
+                  <br />
+                  #JolenPrins
+                </span>
+              </a>
+              <img
+                class="img-fluid"
+                src="https://i0.wp.com/joleneprins.com/wp-content/uploads/2023/01/gallery-4.png?fit=344%2C400&ssl=1"
+                alt=""
+              />
+            </div>
+            <div class="col px-0 position-relative overflow-hidden">
+              <a
+                href="#"
+                class="insta-trigger z-2 position-absolute top-0 bottom-0 start-0 end-0"
+              >
+                <span
+                  class="visually-hidden text-center position-absolute top-0 start-0 end-0 bottom-0 d-flex align-items-center justify-content-center flex-column text-white"
+                >
+                  <i
+                    class="fa-brands fa-instagram fa-lg"
+                    style="color: #ffffff"
+                  ></i>
+                  <br />
+                  #JolenPrins
+                </span>
+              </a>
+              <img
+                class="img-fluid"
+                src="https://i0.wp.com/joleneprins.com/wp-content/uploads/2023/01/gallery_1.png?fit=384%2C303&ssl=1"
+                alt=""
+              />
+            </div>
+            <div class="col px-0 position-relative overflow-hidden">
+              <a
+                href="#"
+                class="insta-trigger z-2 position-absolute top-0 bottom-0 start-0 end-0"
+              >
+                <span
+                  class="visually-hidden text-center position-absolute top-0 start-0 end-0 bottom-0 d-flex align-items-center justify-content-center flex-column text-white"
+                >
+                  <i
+                    class="fa-brands fa-instagram fa-lg"
+                    style="color: #ffffff"
+                  ></i>
+                  <br />
+                  #JolenPrins
+                </span>
+              </a>
+              <img
+                class="img-fluid"
+                src="https://scontent.cdninstagram.com/v/t51.29350-15/106914471_770550663752719_1039027416290354966_n.jpg?_nc_cat=106&ccb=1-7&_nc_sid=c4dd86&_nc_ohc=MgCWg1svUw4AX_Voj5z&_nc_ht=scontent.cdninstagram.com&edm=ANo9K5cEAAAA&oh=00_AfDenC7Eo8Kc0R6ejRrgvceRGR8HtCSo8Z7ld3p-85LXhQ&oe=6552DB5F"
+                alt=""
+              />
+            </div>
+          </div>
+        </div> -->
+
+        <!-- other way -->
+        <!-- <div class="container-fluid">
+          <div class="row" id="instagram-feed">
+            <div class="col-3 px-0">
+              <div class="card border-0">
+                <a href="#" class="stretched-link">
+                  <img
+                    src="https://i0.wp.com/joleneprins.com/wp-content/uploads/2023/11/For-website-1.jpg?resize=890%2C510&ssl=1"
+                    alt=""
+                    class="img-fluid card-img"
+                  />
+                  <div
+                    class="card-img-overlay d-flex flex-column text-white align-items-center justify-content-center"
+                  >
+                    <i
+                      class="fa-brands fa-instagram fa-lg fs-3"
+                    ></i>
+                    <br>
+                    #JolenPrins
+                  </div>
+                </a>
+              </div>
+            </div>
+          </div>
+        </div> -->
+
+        <link rel="stylesheet" href="css/ext-t01.css" />
+
+        <div class="">
+          <div class="imgs_wrapper instagram buzzblog-instagram buzzi">
+            <div class="images clearfix buzzi-list">
+              <figure class="effect-bubba">
+                <a
+                  href="https://www.instagram.com/joleneprins.com_blog/"
+                  target="_blank"
+                  class="overlay-button"
+                  title="#joleneprins.com_blog"
+                ></a
+                ><img
+                  class="nolazyload nopin"
+                  src="img/insta/404262925_17887172003950503_4302991183910878449_n.jpg"
+                  alt="#joleneprins.com_blog"
+                  width="640"
+                  height="640"
+                />
+                <figcaption>
+                  <p class="icon-links">
+                    <span class="icon-instagram">
+                      <i class="fa-brands fa-instagram fa-lg fs-3"></i
+                    ></span>
+                  </p>
+                  <p class="description">#joleneprins.com_blog</p>
+                </figcaption>
+              </figure>
+
+              <figure class="effect-bubba">
+                <a
+                  href="https://www.instagram.com/joleneprins.com_blog/"
+                  target="_blank"
+                  class="overlay-button"
+                  title="#joleneprins.com_blog"
+                ></a
+                ><img
+                  class="nolazyload nopin"
+                  src="img/insta/404112049_17886908663950503_3574463652215956419_n.jpg"
+                  alt="#joleneprins.com_blog"
+                  width="640"
+                  height="640"
+                />
+                <figcaption>
+                  <p class="icon-links">
+                    <span class="icon-instagram">
+                      <i class="fa-brands fa-instagram fa-lg fs-3"></i
+                    ></span>
+                  </p>
+                  <p class="description">#joleneprins.com_blog</p>
+                </figcaption>
+              </figure>
+
+              <figure class="effect-bubba">
+                <a
+                  href="https://www.instagram.com/joleneprins.com_blog/"
+                  target="_blank"
+                  class="overlay-button"
+                  title="#joleneprins.com_blog"
+                ></a
+                ><img
+                  class="nolazyload nopin"
+                  src="img/insta/404121591_17886742250950503_6240901218808161879_n.jpg"
+                  alt="#joleneprins.com_blog"
+                  width="640"
+                  height="640"
+                />
+                <figcaption>
+                  <p class="icon-links">
+                    <span class="icon-instagram">
+                      <i class="fa-brands fa-instagram fa-lg fs-3"></i
+                    ></span>
+                  </p>
+                  <p class="description">#joleneprins.com_blog</p>
+                </figcaption>
+              </figure>
+
+              <figure class="effect-bubba">
+                <a
+                  href="https://www.instagram.com/joleneprins.com_blog/"
+                  target="_blank"
+                  class="overlay-button"
+                  title="#joleneprins.com_blog"
+                ></a
+                ><img
+                  class="nolazyload nopin"
+                  src="img/insta/399742377_17886629372950503_1225823373204815677_n.jpg"
+                  alt="#joleneprins.com_blog"
+                  width="640"
+                  height="640"
+                />
+                <figcaption>
+                  <p class="icon-links">
+                    <span class="icon-instagram">
+                      <i class="fa-brands fa-instagram fa-lg fs-3"></i
+                    ></span>
+                  </p>
+                  <p class="description">#joleneprins.com_blog</p>
+                </figcaption>
+              </figure>
+
+              <figure class="effect-bubba">
+                <a
+                  href="https://www.instagram.com/joleneprins.com_blog/"
+                  target="_blank"
+                  class="overlay-button"
+                  title="#joleneprins.com_blog"
+                ></a
+                ><img
+                  class="nolazyload nopin"
+                  src="img/insta/402610577_17886228368950503_6553728054227522349_n.jpg"
+                  alt="#joleneprins.com_blog"
+                  width="640"
+                  height="640"
+                />
+                <figcaption>
+                  <p class="icon-links">
+                    <span class="icon-instagram">
+                      <i class="fa-brands fa-instagram fa-lg fs-3"></i
+                    ></span>
+                  </p>
+                  <p class="description">#joleneprins.com_blog</p>
+                </figcaption>
+              </figure>
+
+              <figure class="effect-bubba">
+                <a
+                  href="https://www.instagram.com/joleneprins.com_blog/"
+                  target="_blank"
+                  class="overlay-button"
+                  title="#joleneprins.com_blog"
+                ></a
+                ><img
+                  class="nolazyload nopin"
+                  src="img/insta/401506182_17885998619950503_1883784223618503641_n.jpg"
+                  alt="#joleneprins.com_blog"
+                  width="640"
+                  height="640"
+                />
+                <figcaption>
+                  <p class="icon-links">
+                    <span class="icon-instagram">
+                      <i class="fa-brands fa-instagram fa-lg fs-3"></i
+                    ></span>
+                  </p>
+                  <p class="description">#joleneprins.com_blog</p>
+                </figcaption>
+              </figure>
+
+              <figure class="effect-bubba">
+                <a
+                  href="https://www.instagram.com/joleneprins.com_blog/"
+                  target="_blank"
+                  class="overlay-button"
+                  title="#joleneprins.com_blog"
+                ></a
+                ><img
+                  class="nolazyload nopin"
+                  src="img/insta/400864790_17885869892950503_8486895227918863320_n.jpg"
+                  alt="#joleneprins.com_blog"
+                  width="640"
+                  height="640"
+                />
+                <figcaption>
+                  <p class="icon-links">
+                    <span class="icon-instagram">
+                      <i class="fa-brands fa-instagram fa-lg fs-3"></i
+                    ></span>
+                  </p>
+                  <p class="description">#joleneprins.com_blog</p>
+                </figcaption>
+              </figure>
+              <figure class="effect-bubba">
+                <a
+                  href="https://www.instagram.com/joleneprins.com_blog/"
+                  target="_blank"
+                  class="overlay-button"
+                  title="#joleneprins.com_blog"
+                ></a
+                ><img
+                  class="nolazyload nopin"
+                  src="img/insta/400690418_17885704460950503_2906692155742495189_n.jpg"
+                  alt="#joleneprins.com_blog"
+                  width="640"
+                  height="640"
+                />
+                <figcaption>
+                  <p class="icon-links">
+                    <span class="icon-instagram">
+                      <i class="fa-brands fa-instagram fa-lg fs-3"></i
+                    ></span>
+                  </p>
+                  <p class="description">#joleneprins.com_blog</p>
+                </figcaption>
+              </figure>
+              <figure class="effect-bubba">
+                <a
+                  href="https://www.instagram.com/joleneprins.com_blog/"
+                  target="_blank"
+                  class="overlay-button"
+                  title="#joleneprins.com_blog"
+                ></a
+                ><img
+                  class="nolazyload nopin"
+                  src="img/insta/399844616_17885425202950503_5947885669253235080_n.jpg"
+                  alt="#joleneprins.com_blog"
+                  width="640"
+                  height="640"
+                />
+                <figcaption>
+                  <p class="icon-links">
+                    <span class="icon-instagram">
+                      <i class="fa-brands fa-instagram fa-lg fs-3"></i
+                    ></span>
+                  </p>
+                  <p class="description">#joleneprins.com_blog</p>
+                </figcaption>
+              </figure>
+
+              <figure class="effect-bubba">
+                <img
+                  class="nolazyload nopin"
+                  src="img/insta/1.jpg"
+                  alt="#joleneprins.com_blog"
+                  width="640"
+                  height="640"
+                />
+                <figcaption>
+                  <p class="icon-links">
+                    <span class="icon-instagram">
+                      <i class="fa-brands fa-instagram fa-lg fs-3"></i
+                    ></span>
+                  </p>
+                  <p class="description">#joleneprins.com_blog</p>
+                </figcaption>
+              </figure>
+              <figure class="effect-bubba">
+                <a
+                  href="https://www.instagram.com/joleneprins.com_blog/"
+                  target="_blank"
+                  class="overlay-button"
+                  title="#joleneprins.com_blog"
+                ></a
+                ><img
+                  class="nolazyload nopin"
+                  src="img/insta/2.jpg"
+                  alt="#joleneprins.com_blog"
+                  width="640"
+                  height="640"
+                />
+                <figcaption>
+                  <p class="icon-links">
+                    <span class="icon-instagram">
+                      <i class="fa-brands fa-instagram fa-lg fs-3"></i
+                    ></span>
+                  </p>
+                  <p class="description">#joleneprins.com_blog</p>
+                </figcaption>
+              </figure>
+              <figure class="effect-bubba">
+                <a
+                  href="https://www.instagram.com/joleneprins.com_blog/"
+                  target="_blank"
+                  class="overlay-button"
+                  title="#joleneprins.com_blog"
+                ></a
+                ><img
+                  class="nolazyload nopin"
+                  src="img/insta/3.jpg"
+                  alt="#joleneprins.com_blog"
+                  width="640"
+                  height="640"
+                />
+                <figcaption>
+                  <p class="icon-links">
+                    <span class="icon-instagram">
+                      <i class="fa-brands fa-instagram fa-lg fs-3"></i
+                    ></span>
+                  </p>
+                  <p class="description">#joleneprins.com_blog</p>
+                </figcaption>
+              </figure>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer
+      class="d-flex align-items-center flex-column gap-5 pt-5 text-center"
+    >
+      <img
+        class="img-fluid mt-5"
+        id="brand-footer"
+        src="img/JP-logo_horizontal_white.png"
+        alt=""
+      />
+      <div class="d-flex gap-4" id="footer-nav">
+        <a href="mystory.html" class="text-decoration-none text-light"
+          >My Story</a
+        >
+        <a href="blog.html" class="text-decoration-none text-light">Blogs</a>
+        <a href="gallery.html" class="text-decoration-none text-light">Gallery</a>
+        <a href="contact.html" class="text-decoration-none text-light"
+          >Contact</a
+        >
+      </div>
+
+      <div class="d-flex flex-column align-items-center" id="footer-social">
+        <ul class="list-unstyled d-flex gap-2 align-items-center">
+          <li>
+            <a
+              href="https://www.instagram.com/joleneprins.com_blog/"
+              class="border border-light border-opacity-25 border-1 rounded-circle p-3"
+              ><i class="fa-brands fa-instagram"></i
+            ></a>
+          </li>
+          <li>
+            <a
+              href="https://www.linkedin.com/in/jolene-prins-05311280/"
+              class="border border-light border-opacity-25 border-1 rounded-circle p-3"
+              ><i class="fa-brands fa-linkedin"></i
+            ></a>
+          </li>
+        </ul>
+        <div class="d-flex mt-5">
+          <ul class="list-unstyled d-flex gap-2 align-items-center mb-0">
+            <li>
+              <a href="#" class="flag-country d-flex">
+                <img src="img/uk flag.jpg" alt="" />
+              </a>
+            </li>
+            <li>
+              <a href="#" class="flag-country d-flex">
+                <img
+                  src="img/Vector_illustration_of_the_flag_of_the_Netherlands_generated.jpg"
+                  alt=""
+                />
+              </a>
+            </li>
+          </ul>
+        </div>
+      </div>
+      <div class="w-100">
+        <hr class="border-top border-light opacity-25 w-100" />
+        <p class="text-light small fw-lighter">
+          © 2023 Jolene Prins. All Rights Reserved.
+        </p>
+      </div>
+    </footer>
+    <script>
+      window.onload = function () {
+        let nav = document.querySelector(".main-nav-js");
+
+        window.addEventListener("scroll", () => {
+          if (window.scrollY >= 776) {
+            nav.classList.add("position-fixed");
+            nav.style.backgroundColor = "var(--black)";
+          } else if (window.scrollY < 776) {
+            nav.classList.remove("position-fixed");
+            nav.style.backgroundColor = "unset";
+          }
+        });
+      };
+
+      var instaTriggers = document.querySelectorAll(".insta-trigger");
+
+      instaTriggers.forEach(function (trigger) {
+        trigger.addEventListener("mouseover", function (e) {
+          var spanElement = e.target.querySelector("span");
+
+          if (spanElement) {
+            spanElement.classList.remove("visually-hidden");
+          }
+        });
+
+        trigger.addEventListener("mouseleave", function () {
+          var spanElement = trigger.querySelector("span");
+
+          if (spanElement) {
+            spanElement.classList.add("visually-hidden");
+          }
+        });
+      });
+
+      const swiper = new Swiper("#latest-blog", {
+        direction: "horizontal",
+        loop: true,
+        autoplay: {
+          delay: 2500,
+          disableOnInteraction: false,
+        },
+        spaceBetween: 30,
+        breakpoints: {
+          0: {
+            slidesPerView: 1,
+            spaceBetween: 10,
+          },
+          640: {
+            slidesPerView: 2,
+            spaceBetween: 20,
+          },
+          1024: {
+            slidesPerView: 4,
+            spaceBetween: 30,
+          },
+        },
+
+        pagination: {
+          el: ".swiper-pagination",
+          clickable: true,
+        },
+
+        navigation: {
+          nextEl: ".swiper-button-next",
+          prevEl: ".swiper-button-prev",
+        },
+      });
+    </script>
+  </body>
+</html>
